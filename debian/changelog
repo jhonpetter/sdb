@@ -1,0 +1,5 @@
+sdb (2.3.0-1) unstable; urgency=low
+
+  *  Used 2.3.0 codebase
+
+ -- Tizen <tizen.infra@samsung.com>  Thu, 22 Dec 2016 13:09:00 +0900

@@ -1,0 +1,422 @@
+* 3.1.0
+- revert sdb from tims to old version
+== jihye kim <jihye424.kim@samsung.com> 2017-10-22
+* 2.3.6
+- add socket null check on encryption
+== Sooyoung Ha <yoosah.ha@samsung.com> 2017-09-04
+* 2.3.5
+- trivial patch for static analysis
+== Sooyoung Ha <yoosah.ha@samsung.com> 2017-09-04
+* 2.3.4
+- fix potential problem
+== Sooyoung Ha <yoosah.ha@samsung.com> 2017-08-28
+* 2.3.3
+- fix potential problems
+== Sooyoung Ha <yoosah.ha@samsung.com> 2017-08-22
+* 2.3.2
+- increase limit of command message length
+== Sooyoung Ha <yoosah.ha@samsung.com> 2017-07-06
+* 2.3.1
+- Add debian files to create deb package.
+- fix static analysis issues.
+== minkee Lee <minkee.lee@samsung.com> 2017-05-15
+* 2.3.0
+- Change the log type of "EAGAIN" error
+== SangJin Kim <sangjin3.kim@samsung.com> 2016-12-19
+* 2.2.99
+- Modify sdb server logging policy for error log
+== SangJin Kim <sangjin3.kim@samsung.com> 2016-12-19
+* 2.2.98
+- Refine user message
+== shingil.kang <shingil.kang@samsung.com> 2016-12-19
+* 2.2.97
+- Change the path to save package file
+== SangJin Kim <sangjin3.kim@samsung.com> 2016-12-09
+* 2.2.96
+- Increase size of USB transport packet
+== shingil.kang <shingil.kang@samsung.com> 2016-12-09
+* 2.2.95
+- undo "revert the encryption feature"
+== Jaewon Lim <jaewon81.lim@samsung.com> 2016-11-10
+* 2.2.94
+- revert the encryption feature
+== SangJin Kim <sangjin3.kim@samsung.com> 2016-11-09
+* 2.2.93
+- fix the encryption bug
+== SangJin Kim <sangjin3.kim@samsung.com> 2016-11-08
+* 2.2.92
+- add encryption feature
+== Jaewon Lim <jaewon81.lim@samsung.com> 2016-11-08
+* 2.2.91
+- version up to 2.2.91 for SDB client/server.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-10-19
+* 2.2.90
+- Fixed the bug that transport with same serial number is generated multiply.
+= SangJin Kim <sangjin3.kim@samsung.com> 2016-10-18
+* 2.2.89
+- Fix wrong output in MS-DOS console when execute "status-window"
+== Jaewon Lim <jaewon81.lim@samsung.com> 2016-08-16
+* 2.2.88
+- Fixed the issue that sdb client is blocked for poweroff shell command.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-06-27
+* 2.2.87
+- Modify that it does not inherit the handle in Windows OS.
+- Add platform_type_name to transport.h header file
+- Add protocol to get the platform type of target
+== shingil.kang <shingil.kang@samsung.com> 2016-06-21
+* 2.2.86
+- "Revert "Add protocol to get the platform type of target.""
+== shingil.kang <shingil.kang@samsung.com> 2016-06-16
+* 2.2.85
+- Added client API that it is possible to obtain a fail msg.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-06-14
+* 2.2.84
+- Add protocol to get the platform type of target
+- Modify the URB routine to cause the problem.
+== shingil.kang <shingil.kang@samsung.com> 2016-06-09
+* 2.2.83
+- Modify the output stream(stdout to stderr) for version conflict msg.
+- Fixed a bug where garbage characters follow pull/push error message.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-05-23
+* 2.2.82
+- Validate port number for forwarding
+== Jaewon Lim <jaewon81.lim@samsung.com> 2016-04-25
+* 2.2.81
+- Modify the location of log output for "sdb shell" routine.
+- Add a secure warning message for pushing files.
+- Print message "Please click reset button on your device" if KITT target is unauthorized.
+- Supported to detect tizen device only.
+- fix a bug when client connect to server with wrong port number.
+== shingil.kang <shingil.kang@samsung.com> 2016-04-07
+* 2.2.80
+- Fixed a bug that it is blocked when installing app package with emulator 2.3.1 or 2.3
+== shingil.kang <shingil.kang@samsung.com> 2016-03-14
+* 2.2.79
+- Fixed a bug that pull/push does not work on Windows
+== shingil.kang <shingil.kang@samsung.com> 2016-03-14
+* 2.2.78
+- Detect tizen target which has sdb interface in its configurations
+- Enable progress bar in file push/pull.
+- Supports an interactive shell in case of the 'sdb shell cmd
+- Sign sdb.exe file on windows
+- Change path of RSA key and name
+- Fixed a bug that it fails to remove app package during installing app package
+== shingil.kang <shingil.kang@samsung.com> 2016-03-09
+* 2.2.77
+- Add check rule for is_support_debug_option().
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-02-17
+* 2.2.76
+- Modify the method for determining whether put the debug option(-G).
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2016-02-15
+* 2.2.75
+- Fixed a bug that interative shell with syncwinsz does not work as eclipse external tool
+== shingil.kang <shingil.kang@samsung.com> 2016-01-21
+* 2.2.74
+- Fixed that SDB doese not detect tizen device on OSX 10.11
+== shingil.kang <shingil.kang@samsung.com> 2015-12-30
+* 2.2.73
+- Modify the packet size in transport protocol.
+== shingil.kang <shingil.kang@samsung.com> 2015-12-18
+* 2.2.72
+- Remove unnecessary console msg in shell protocol with 2.3.1.
+- Add KEEP_ALIVE option to the socket connected with sdbd.
+- Supported to connect target using thread
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-12-01
+* 2.2.71
+- Reverted "Supported to connect on thread"
+== shingil.kang <shingil.kang@samsung.com> 2015-11-06
+* 2.2.70
+- Modify uninstall routine to remove unnecessary option for pkgcmd.
+- Supported to connect on thread.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-11-06
+* 2.2.69
+- Modify install rotine to support install white-space pkg file.
+- Modify Log type for error case when working directory is changed.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-11-03
+* 2.2.68
+- Give debug option -G when installing app package.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-09-24
+* 2.2.67
+- Modify the connect() utility function for Windows OS.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-09-23
+* 2.2.66
+- Bug fix: support install/uninstall a package with a name containing spaces.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-09-18
+* 2.2.65
+- Provides a bash auto-complete file to the user.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-09-16
+* 2.2.64
+- Unlimit SDB FD
+- Fixed that accepted client socket is not closed when it failed to write to remote.
+- Redefine the working directory path of the SDB server.
+- Fix the double free case for auto-complete routine.
+- Fix duplicated local_socket_close for track-device.
+- Synchronize shell window size with remote shell.
+== shingil.kang <shingil.kang@samsung.com> 2015-09-15
+* 2.2.63
+- Fixed to bind incorrect remote port sometimes when port forwarding
+== shingil.kang <shingil.kang@samsung.com> 2015-08-24
+* 2.2.62
+- Enabled to connect to forwarding port from remote host
+== shingil.kang <shingil.kang@samsung.com> 2015-08-20
+* 2.2.61
+- Prevent double free
+== shingil.kang <shingil.kang@samsung.com> 2015-08-03
+* 2.2.60
+- Supported to detect android device
+- Fixed to print port forwarding info
+- Added Unauthroized state of device
+- If status of tizen/android device is unauthorized, block sdb connection.
+== shingil.kang <shingil.kang@samsung.com> 2015-07-20
+* 2.2.59
+- Modify the file permission mode in push/pull operation.
+- Modify the way checking the connection state for the blocking issue.
+- prevent sdb clinet from returning 1 when trying to kill sdb server though it is not started.
+- Modify the install and remove script on Ubuntu/MacOS to fix whitespace path issue.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-07-09
+* 2.2.58
+- Modify the windows uninstall script to fix whitespace path issue.
+== shingil.kang <shingil.kang@samsung.com> 2015-06-30
+* 2.2.57
+- send connection request in thread on windows during sdb booting time to prevent emulator with no shared memory information being not detected
+== shingil.kang <shingil.kang@samsung.com> 2015-06-05
+* 2.2.56
+- Fixed to register transport when errors irrelevant to it occur.
+- Fixed to close fd after opening USB nod
+== shingil.kang <shingil.kang@samsung.com> 2015-06-04
+* 2.2.55
+- Remove sdb's prerequisite library about libudev.
+== shingil.kang <shingil.kang@samsung.com> 2015-06-02
+* 2.2.54
+- allow the device wait for 1 sec to send the connect message.
+- remove duplicate transport from transport list.
+== shingil.kang <shingil.kang@samsung.com> 2015-04-24
+* 2.2.53
+- Added to environment shell feature.
+== gunsoo83.kim <gunsoo83.kim@samsung.com> 2015-04-22
+* 2.2.52
+- Split SEND msg into 2 bytes due to security issue when pushing a file on Windows
+== yoonki.park <yoonki.park@samsung.com> 2015-01-06
+* 2.2.51
+- Supported coretpk app type for 'sdb uninstall' command
+- Supported 'profile' command
+- Changed name of profile command (/usr/bin/profile_command.sh -> /usr/bin/profile_command)
+- Added pre-required library for ubuntu 14.x
+- Added library dependency
+== shingil.kang <shingil.kang@samsung.com> 2014-12-02
+* 2.2.49
+- Upgraded ansicon version 1.66
+== shingil.kang <shingil.kang@samsung.com> 2014-08-12
+* 2.2.48
+- Added symbolic link to libudev library when installing sdb
+== shingil.kang <shingil.kang@samsung.com> 2014-07-28
+* 2.2.47
+- bind the IP of SDB Server lister to 0.0.0.0.
+== shingil.kang <shingil.kang@samsung.com> 2014-05-13
+* 2.2.46
+- bind the IP of forward lister to 0.0.0.0.
+- get application temporary path by using pkgcmd when installing tizen package
+- fixed a bug where completing remote path automatically is not worked.
+- added sdb auto completion to the install script on Mac OS
+- checked the length of reading device description
+- check if sdb completion script exists when applying sdb completion.
+- fixed prevent issue
+== shingil.kang <shingil.kang@samsung.com> 2014-04-27
+* 2.2.45
+- remove sdb autocomplete script when uninstalling sdb
+== ho.namkoong <ho.namkoong@samsung.com> 2013-01-20
+* 2.2.44
+- remove sudo when install sdb
+== ho.namkoong <ho.namkoong@samsung.com> 2013-01-08
+* 2.2.43
+- run tsudo only one time, enable Windows autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-01-08
+* 2.2.42
+- fix install failed due to using tsudo not ${TSUDO}
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-20
+* 2.2.41
+- change gksudo ->tsudo for tct of install manager
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-20
+* 2.2.40
+- add sdb link in /usr/bin/sdb for autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-18
+* 2.2.39
+- fix uninstall script for sdb autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-17
+* 2.2.38
+- fix install script for sdb autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-17
+* 2.2.37
+- block sdb autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-17
+* 2.2.36
+- block sdb autocomplete
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-17
+* 2.2.35
+- add sdb autocomplete in Linux
+- fix web debug by removing 512 usb hot patch
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-17
+* 2.2.34
+- fix sdb error message
+- when there are more than one device, error happend by -d option is modified
+== ho.namkoong <ho.namkoong@samsung.com> 2013-12-09
+* 2.2.33
+- support suspended mode
+- fix service parsing bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-11-26
+* 2.2.32
+- remove debug fatal log when sdb is just booted up
+== yoonki.park <yoonki.park@samsung.com> 2013-11-15
+* 2.2.31
+- fix pull bug in Windows
+== ho.namkoong <ho.namkoong@samsung.com> 2013-11-13
+* 2.2.30
+- fix web debug in Unix
+== ho.namkoong <ho.namkoong@samsung.com> 2013-11-01
+* 2.2.29
+- calling gksudo has been removed from uninstall script
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-31
+* 2.2.28
+- display pull/push progress on cmdline
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-28
+* 2.2.27
+- bug fix for Windows disconnect
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-28
+* 2.2.26
+- hot patch for tct stuck
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-25
+* 2.2.25
+- sdb version up 2.2.20
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-25
+* 2.2.24
+- sdb version up 2.2.19
+== yoonki.park <yoonki.park@samsung.com> 2013-10-25 04:00
+* 2.2.23
+- fix map bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-10-24
+* 2.2.22
+- refactoring usb module from windows
+== yoonki.park <yoonki.park@samsung.com> 2013-10-23 16:00
+* 2.2.21
+- sync source from dev branch
+== yoonki.park <yoonki.park@samsung.com> 2013-10-22 24:00
+* 2.2.20
+- fix offline bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-09-16 21:35
+* 2.2.19
+- fix device undetected bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-09-16 20:36
+* 2.2.18
+- Fix duplicated target bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-09-16 13:50
+* 2.2.17
+- fix pull/ push bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-09-14 20:06
+* 2.2.16
+- fix bugs about sdb test cases
+== ho.namkoong <ho.namkoong@samsung.com> 2013-09-01
+* 2.2.15
+- version up for refactoring test
+== ho.namkoong <ho.namkoong@samsung.com> 2013-08-23
+* 2.2.14
+- version up 2.2.14
+== ho.namkoong <ho.namkoong@samsung.com> 2013-08-07
+* 2.2.13
+- version up 2.2.13
+== ho.namkoong <ho.namkoong@samsung.com> 2013-08-05
+* 2.2.12
+- fix socket close bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-24
+* 2.2.11
+- fix web debugging bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-24
+* 2.2.10
+- fix forward bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-24
+* 2.2.9
+- remove setting sdb path
+== yoonki.park <yoonki.park@samsung.com> 2013-07-23
+* 2.2.8
+- fixed to install on windows
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-22
+* 2.2.7
+- fixed to add sdb path to windows shell
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-19
+* 2.2.6
+- change PATH_MAX in Windows 256 -> 4096
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-11
+* 2.2.5
+- use tsudo
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-11
+* 2.2.4
+- use libusb.so
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-11
+* 2.2.3
+- fix da and oprofile arg appending bug
+== ho.namkoong <ho.namkoong@samsung.com> 2013-07-04
+* 2.2.2
+- sdb for tizen2.2
+== yoonki.park <yoonki.park@samsung.com> 2013-07-04
+* 2.2.1
+- fixed crash on Windows
+== yoonki.park <yoonki.park@samsung.com> 2013-06-21
+* 2.2.0
+- sdb for tizen2.2
+== yoonki.park <yoonki.park@samsung.com> 2013-06-15
+* 2.1.26
+- support debug command
+== yoonki.park <yoonki.park@samsung.com> 2013-04-22
+* 2.1.25
+- show error pretty in sdb root command
+== yoonki.park <yoonki.park@samsung.com> 2013-04-18
+* 2.1.24
+- support launch command
+== yoonki.park <yoonki.park@samsung.com> 2013-04-17
+* 2.1.23
+- change pkgcmd path
+== yoonki.park <yoonki.park@samsung.com> 2013-04-13
+* 2.1.22
+- fixed build error for windows
+== yoonki.park <yoonki.park@samsung.com> 2013-04-13
+* 2.1.21
+- Add wgt install / uninstall
+== ho.namkoong <ho.namkoong@samsung.com> 2013-04-12
+* 2.1.2
+- Make install path /opt/usr/apps/
+== ho.namkoong <ho.namkoong@samsung.com> 2013-04-05 12:03
+* 2.1.1
+- add root command
+== yoonki.park <yoonki.park@samsung.com> 2013-03-29
+* 2.1.0
+- update version to 2.1.0
+== ho.namkoong <ho.namkoong@samsung.com> 2013-03-11
+* 1.0.20
+- comment out goto fail when setting 2 configuration
+== yoonki.park <yoonki.park@samsung.com> 2013-01-22 00:11
+* 1.0.19
+- remove stdout if command -serial
+== yoonki.park <yoonki.park@samsung.com> 2012-12-22 00:11
+* 1.0.18
+- fixed to install a application
+== yoonki.park <yoonki.park@samsung.com> 2012-12-18 00:11
+* 1.0.17
+- fixed build error for windows
+== yoonki.park <yoonki.park@samsung.com> 2012-12-17 21:11
+* 1.0.16
+- version up to 1.0.16
+== yoonki.park <yoonki.park@samsung.com> 2012-12-17 17:11
+* 1.0.15
+- add udev rule to give usb node permission 666
+== yoonki.park <yoonki.park@samsung.com> 2012-11-02 18:13
+* 1.0.14
+- remove ssh package from sdb
+== yoonki.park <yoonki.park@samsung.com> 2012-11-06 17:30
+* 1.0.13
+- remove some feature from remove branch
+== yoonki.park <yoonki.park@samsung.com> 2012-11-06 16:30
+* 1.0.12
+- merge branch 'develop' into release
+== yoonki.park <yoonki.park@samsung.com> 2012-11-06 16:11
+* 1.0.11
+- uploaded sdb package
+== yoonki.park <yoonki.park@samsung.com> 2012-11-05 14:17

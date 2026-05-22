@@ -1,0 +1,1576 @@
+
+aes.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/aes.c -o ../gcc/build/linux/base/aes.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/aes.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/aes.c: In function 'SDRM_rijndaelKeySetupEnc':
+../Src/base/aes.c:815:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelKeySetupDec':
+../Src/base/aes.c:869:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelEncrypt':
+../Src/base/aes.c:1065:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelDecrypt':
+../Src/base/aes.c:1261:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES128_Encryption':
+../Src/base/aes.c:1282:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES128_Decryption':
+../Src/base/aes.c:1303:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES192_Encryption':
+../Src/base/aes.c:1324:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES192_Decryption':
+../Src/base/aes.c:1345:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES256_Encryption':
+../Src/base/aes.c:1366:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES256_Decryption':
+../Src/base/aes.c:1387:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ANSI_x931.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/ANSI_x931.c -o ../gcc/build/linux/base/ANSI_x931.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/ANSI_x931.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/ANSI_x931.c: In function 'SDRM_RNG_X931':
+../Src/base/ANSI_x931.c:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+bignum.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/bignum.c -o ../gcc/build/linux/base/bignum.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/bignum.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/bignum.c: In function 'SDRM_DWD_Classical_REDC':
+../Src/base/bignum.c:768:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_DIGIT_Gcd':
+../Src/base/bignum.c:798:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_PrintBN':
+../Src/base/bignum.c:838:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN2OS':
+../Src/base/bignum.c:921:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_I2OSP':
+../Src/base/bignum.c:986:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Clr':
+../Src/base/bignum.c:1004:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Copy':
+../Src/base/bignum.c:1028:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Alloc':
+../Src/base/bignum.c:1053:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Init':
+../Src/base/bignum.c:1079:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Cmp':
+../Src/base/bignum.c:1102:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Cmp_sign':
+../Src/base/bignum.c:1134:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Rand':
+../Src/base/bignum.c:1167:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_SHL':
+../Src/base/bignum.c:1215:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_OS2BN':
+../Src/base/bignum.c:961:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_SHR':
+../Src/base/bignum.c:1266:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Add':
+../Src/base/bignum.c:1376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Sub':
+../Src/base/bignum.c:1477:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Mul':
+../Src/base/bignum.c:1532:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Div':
+../Src/base/bignum.c:1633:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModRed':
+../Src/base/bignum.c:1828:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModSub':
+../Src/base/bignum.c:1779:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModAdd':
+../Src/base/bignum.c:1709:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModMul':
+../Src/base/bignum.c:1878:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModInv':
+../Src/base/bignum.c:2019:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Rzn2zn':
+../Src/base/bignum.c:2093:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Mul':
+../Src/base/bignum.c:2171:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Init':
+../Src/base/bignum.c:2328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Free':
+../Src/base/bignum.c:2343:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_num_bits':
+../Src/base/bignum.c:2369:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Set':
+../Src/base/bignum.c:2300:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_UINT32_num_bits':
+../Src/base/bignum.c:2398:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_INT_num_bits':
+../Src/base/bignum.c:2424:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModExp':
+../Src/base/bignum.c:2502:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModExp2':
+../Src/base/bignum.c:2584:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_CheckRelativelyPrime':
+../Src/base/bignum.c:2643:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_MILLER_RABIN':
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: At top level:
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+des.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/des.c -o ../gcc/build/linux/base/des.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/des.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/des.c: In function 'SDRM_DES_KeySched':
+../Src/base/des.c:79:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES_Encryption':
+../Src/base/des.c:124:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES64_Encryption':
+../Src/base/des.c:145:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES64_Decryption':
+../Src/base/des.c:166:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecc.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/ecc.c -o ../gcc/build/linux/base/ecc.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/ecc.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/ecc.c: In function 'SDRM_ECC_Init':
+../Src/base/ecc.c:47:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CURVE_Init':
+../Src/base/ecc.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CHECK_EC_POINT_ZERO':
+../Src/base/ecc.c:121:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_Mont_Jm2Jc':
+../Src/base/ecc.c:157:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_Mont_Jc2Jm':
+../Src/base/ecc.c:190:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Add':
+../Src/base/ecc.c:283:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Double_Jc':
+../Src/base/ecc.c:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Add_Jc':
+../Src/base/ecc.c:414:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Double_Jm':
+../Src/base/ecc.c:607:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Chain':
+../Src/base/ecc.c:784:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_kP':
+../Src/base/ecc.c:989:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_2kP':
+../Src/base/ecc.c:1274:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+fast_math.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/fast_math.c -o ../gcc/build/linux/base/fast_math.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/fast_math.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/fast_math.c: In function 'SDRM_ll_Cmp':
+../Src/base/fast_math.c:61:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Copy':
+../Src/base/fast_math.c:73:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_RShift':
+../Src/base/fast_math.c:98:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_LShift':
+../Src/base/fast_math.c:124:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_getMSW':
+../Src/base/fast_math.c:146:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_getMSB':
+../Src/base/fast_math.c:174:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_getBitValue':
+../Src/base/fast_math.c:191:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_getBitsValue':
+../Src/base/fast_math.c:245:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Add':
+../Src/base/fast_math.c:280:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_AddCarry':
+../Src/base/fast_math.c:311:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Sub':
+../Src/base/fast_math.c:340:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Mul1':
+../Src/base/fast_math.c:375:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_MulAdd1':
+../Src/base/fast_math.c:410:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_MulAdd':
+../Src/base/fast_math.c:431:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Mul':
+../Src/base/fast_math.c:453:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Square':
+../Src/base/fast_math.c:505:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Rem':
+../Src/base/fast_math.c:539:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Inverse':
+../Src/base/fast_math.c:576:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Rem':
+../Src/base/fast_math.c:617:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Square':
+../Src/base/fast_math.c:646:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Mul':
+../Src/base/fast_math.c:689:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_ExpMod':
+../Src/base/fast_math.c:906:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+hash.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/hash.c -o ../gcc/build/linux/base/hash.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/hash.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/hash.c: In function 'SDRM_SHA1_init':
+../Src/base/hash.c:43:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_update':
+../Src/base/hash.c:66:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_final':
+../Src/base/hash.c:88:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_hash':
+../Src/base/hash.c:114:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_init':
+../Src/base/hash.c:135:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_update':
+../Src/base/hash.c:158:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_final':
+../Src/base/hash.c:179:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_hash':
+../Src/base/hash.c:205:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_init':
+../Src/base/hash.c:226:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_update':
+../Src/base/hash.c:249:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_final':
+../Src/base/hash.c:270:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_hash':
+../Src/base/hash.c:296:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_init':
+../Src/base/hash.c:319:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_update':
+../Src/base/hash.c:342:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_final':
+../Src/base/hash.c:364:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_hash':
+../Src/base/hash.c:390:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_init':
+../Src/base/hash.c:411:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_update':
+../Src/base/hash.c:434:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_final':
+../Src/base/hash.c:456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_hash':
+../Src/base/hash.c:482:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_init':
+../Src/base/hash.c:505:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_update':
+../Src/base/hash.c:528:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_final':
+../Src/base/hash.c:550:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_hash':
+../Src/base/hash.c:576:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+md5.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/md5.c -o ../gcc/build/linux/base/md5.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/md5.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/md5.c: In function 'SDRM_MD5_Init':
+../Src/base/md5.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/md5.c: In function 'SDRM_MD5_Update':
+../Src/base/md5.c:139:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/md5.c: In function 'SDRM_MD5_Final':
+../Src/base/md5.c:165:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+moo.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/moo.c -o ../gcc/build/linux/base/moo.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/moo.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/moo.c: In function 'SDRM_ECB_Enc':
+../Src/base/moo.c:55:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_ECB_Dec':
+../Src/base/moo.c:91:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CBC_Enc':
+../Src/base/moo.c:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CBC_Dec':
+../Src/base/moo.c:230:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CFB_Enc':
+../Src/base/moo.c:289:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CFB_Dec':
+../Src/base/moo.c:348:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_OFB_Enc':
+../Src/base/moo.c:407:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CTR_Enc':
+../Src/base/moo.c:485:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+pkcs1_v21.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/pkcs1_v21.c -o ../gcc/build/linux/base/pkcs1_v21.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/pkcs1_v21.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsaes_pkcs15':
+../Src/base/pkcs1_v21.c:155:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsassa_pkcs15':
+../Src/base/pkcs1_v21.c:564:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_MGF1':
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsassa_pss':
+../Src/base/pkcs1_v21.c:825:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsaes_oaep':
+../Src/base/pkcs1_v21.c:417:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: At top level:
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rc4.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/rc4.c -o ../gcc/build/linux/base/rc4.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/rc4.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/rc4.c: In function 'SDRM_RC4_Setup':
+../Src/base/rc4.c:117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/rc4.c: In function 'SDRM_RC4_PRNG':
+../Src/base/rc4.c:158:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+sha1.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/sha1.c -o ../gcc/build/linux/base/sha1.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/sha1.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Init':
+../Src/base/sha1.c:137:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Update':
+../Src/base/sha1.c:318:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Final':
+../Src/base/sha1.c:367:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_endianTest':
+../Src/base/sha1.c:469:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+sha2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/sha2.c -o ../gcc/build/linux/base/sha2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/sha2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Transf':
+../Src/base/sha2.c:321:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Init':
+../Src/base/sha2.c:333:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Update':
+../Src/base/sha2.c:366:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Final':
+../Src/base/sha2.c:391:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Transf':
+../Src/base/sha2.c:444:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Init':
+../Src/base/sha2.c:456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Update':
+../Src/base/sha2.c:489:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Final':
+../Src/base/sha2.c:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Init':
+../Src/base/sha2.c:528:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Update':
+../Src/base/sha2.c:561:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Final':
+../Src/base/sha2.c:586:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Init':
+../Src/base/sha2.c:601:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Update':
+../Src/base/sha2.c:635:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Final':
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: At top level:
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+snow2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/snow2.c -o ../gcc/build/linux/base/snow2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/snow2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_Setup':
+../Src/base/snow2.c:344:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_getKeyStream64':
+../Src/base/snow2.c:374:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_getKeyStream':
+../Src/base/snow2.c:402:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+cmac.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/cmac.c -o ../gcc/build/linux/middle/cmac.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/cmac.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_init':
+../Src/middle/cmac.c:117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_update':
+../Src/middle/cmac.c:173:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_final':
+../Src/middle/cmac.c:219:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_getMAC':
+../Src/middle/cmac.c:258:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+dh.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/dh.c -o ../gcc/build/linux/middle/dh.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/dh.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/dh.c: In function 'SDRM_GenerateDHParam':
+../Src/middle/dh.c:119:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_SetDHParam':
+../Src/middle/dh.c:166:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_GenerateDHPrivate':
+../Src/middle/dh.c:232:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_GetDHSharedSecret':
+../Src/middle/dh.c:306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_FreeDHContext':
+../Src/middle/dh.c:330:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+dsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/dsa.c -o ../gcc/build/linux/middle/dsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/dsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/dsa.c: In function 'SDRM_Add_DW2BA':
+../Src/middle/dsa.c:61:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_InitCrt':
+../Src/middle/dsa.c:88:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_SetParam':
+../Src/middle/dsa.c:130:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_SetKeyPair':
+../Src/middle/dsa.c:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_GenParam':
+../Src/middle/dsa.c:358:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_GenKeypair':
+../Src/middle/dsa.c:429:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_sign':
+../Src/middle/dsa.c:509:2: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_verify':
+../Src/middle/dsa.c:600:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecdh.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/ecdh.c -o ../gcc/build/linux/middle/ecdh.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/ecdh.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/ecdh.c: In function 'SDRM_generateDH1stPhaseKey':
+../Src/middle/ecdh.c:101:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdh.c: In function 'SDRM_generateDHKey':
+../Src/middle/ecdh.c:202:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecdsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/ecdsa.c -o ../gcc/build/linux/middle/ecdsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/ecdsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_KEY_GEN':
+../Src/middle/ecdsa.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_SIG_GEN':
+../Src/middle/ecdsa.c:212:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_SIG_VERIFY':
+../Src/middle/ecdsa.c:363:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECDSA_sign':
+../Src/middle/ecdsa.c:391:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECDSA_verify':
+../Src/middle/ecdsa.c:434:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_Set_CTX':
+../Src/middle/ecdsa.c:531:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_genKeypair':
+../Src/middle/ecdsa.c:598:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_setKeypair':
+../Src/middle/ecdsa.c:662:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+hmac.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/hmac.c -o ../gcc/build/linux/middle/hmac.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/hmac.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_update':
+../Src/middle/hmac.c:285:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_final':
+../Src/middle/hmac.c:433:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_getK0':
+../Src/middle/hmac.c:570:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_init':
+../Src/middle/hmac.c:230:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_getMAC':
+../Src/middle/hmac.c:472:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rng.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/rng.c -o ../gcc/build/linux/middle/rng.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/rng.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/rng.c: In function 'SDRM_X931_seed':
+../Src/middle/rng.c:41:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rng.c: In function 'SDRM_X931_get':
+../Src/middle/rng.c:67:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/rsa.c -o ../gcc/build/linux/middle/rsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/rsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/rsa.c: In function 'SDRM_RSA_InitCrt':
+../Src/middle/rsa.c:58:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_setNED':
+../Src/middle/rsa.c:105:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_setNEDPQ':
+../Src/middle/rsa.c:218:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateKey':
+../Src/middle/rsa.c:376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateND':
+../Src/middle/rsa.c:520:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateDwithPQE':
+../Src/middle/rsa.c:665:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_encrypt':
+../Src/middle/rsa.c:762:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_decrypt':
+../Src/middle/rsa.c:859:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_decryptByCRT':
+../Src/middle/rsa.c:1029:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_sign':
+../Src/middle/rsa.c:1117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_verify':
+../Src/middle/rsa.c:1206:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+symmetric.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/symmetric.c -o ../gcc/build/linux/middle/symmetric.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/symmetric.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/symmetric.c: In function 'SDRM_getEncRoundKey':
+../Src/middle/symmetric.c:68:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_getDecRoundKey':
+../Src/middle/symmetric.c:114:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_init':
+../Src/middle/symmetric.c:188:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_process':
+../Src/middle/symmetric.c:351:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_final':
+../Src/middle/symmetric.c:606:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_RC4_init':
+../Src/middle/symmetric.c:638:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_RC4_process':
+../Src/middle/symmetric.c:670:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_SNOW2_init':
+../Src/middle/symmetric.c:703:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_SNOW2_process':
+../Src/middle/symmetric.c:797:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_init':
+../Src/middle/symmetric.c:860:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_process':
+../Src/middle/symmetric.c:1014:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_final':
+../Src/middle/symmetric.c:1231:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_init':
+../Src/middle/symmetric.c:1306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_process':
+../Src/middle/symmetric.c:1460:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_final':
+../Src/middle/symmetric.c:1679:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+tdes.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/tdes.c -o ../gcc/build/linux/middle/tdes.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/tdes.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/tdes.c: In function 'SDRM_TDES_KeySched':
+../Src/middle/tdes.c:65:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES_Encryption':
+../Src/middle/tdes.c:86:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES64_Encryption':
+../Src/middle/tdes.c:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES64_Decryption':
+../Src/middle/tdes.c:129:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+CC_API.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/CC_API.c -o ../gcc/build/linux/CC_API.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/CC_API.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/CC_API.c: In function 'CCMalloc':
+../Src/CC_API.c:46:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'CCFree':
+../Src/CC_API.c:54:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'create_CryptoCoreContainer':
+../Src/CC_API.c:336:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'destroy_CryptoCoreContainer':
+../Src/CC_API.c:438:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+DRMLog.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/DRMLog.c -o ../gcc/build/linux/DRMLog.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/DRMLog.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+SDWAP.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SDWAP.c -o ../gcc/build/linux/WhiteBox/SDWAP.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SDWAP.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SDWAP.c: In function 'SDWAP_Process':
+../Src/WhiteBox/SDWAP.c:498:15: warning: variable 'Nk' set but not used [-Wunused-but-set-variable]
+../Src/WhiteBox/SDWAP.c:569:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP.c: At top level:
+../Src/WhiteBox/SDWAP.c:569:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SDWAP_TblGen.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SDWAP_TblGen.c -o ../gcc/build/linux/WhiteBox/SDWAP_TblGen.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation':
+../Src/WhiteBox/SDWAP_TblGen.c:210:25: warning: initialization makes integer from pointer without a cast [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'MakeEachKeyLookup':
+../Src/WhiteBox/SDWAP_TblGen.c:252:17: warning: unused variable 'pBeforeLKCol' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GeneratePVector':
+../Src/WhiteBox/SDWAP_TblGen.c:1309:15: warning: variable 'rnd' set but not used [-Wunused-but-set-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateTable':
+../Src/WhiteBox/SDWAP_TblGen.c:1566:22: warning: unused variable 'pKeyBitPBox' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c:1565:23: warning: unused variable 'pKeyBytePBox' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: At top level:
+../Src/WhiteBox/SDWAP_TblGen.c:1372:13: warning: 'SDWAP_GeneratePVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1418:13: warning: 'SDWAP_GenerateInvPVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1464:13: warning: 'SDWAP_GenerateInvPVector_fstest' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1494:13: warning: 'SDWAP_ConvertPBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1522:13: warning: 'SDWAP_RandomizePBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation':
+../Src/WhiteBox/SDWAP_TblGen.c:229:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation_LK':
+../Src/WhiteBox/SDWAP_TblGen.c:235:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateBitPBox':
+../Src/WhiteBox/SDWAP_TblGen.c:521:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_ProcessBitPBox':
+../Src/WhiteBox/SDWAP_TblGen.c:590:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateTable':
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: At top level:
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SWAPv2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SWAPv2.c -o ../gcc/build/linux/WhiteBox/SWAPv2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SWAPv2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SWAPv2.c: In function 'SWAPv2_Process':
+../Src/WhiteBox/SWAPv2.c:306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SWAPv2_TblGen.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SWAPv2_TblGen.c -o ../gcc/build/linux/WhiteBox/SWAPv2_TblGen.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'BitPermutation':
+../Src/WhiteBox/SWAPv2_TblGen.c:275:25: warning: initialization makes integer from pointer without a cast [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'ProcessBytePBox':
+../Src/WhiteBox/SWAPv2_TblGen.c:434:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Src/WhiteBox/SWAPv2_TblGen.c: At top level:
+../Src/WhiteBox/SWAPv2_TblGen.c:1119:13: warning: 'GeneratePVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1165:13: warning: 'GenerateInvPVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1211:13: warning: 'GenerateInvPVector_fstest' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1241:13: warning: 'ConvertPBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1269:13: warning: 'RandomizePBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'BitPermutation':
+../Src/WhiteBox/SWAPv2_TblGen.c:294:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'ProcessBitPBox':
+../Src/WhiteBox/SWAPv2_TblGen.c:376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'SWAPv2_GenerateTable':
+../Src/WhiteBox/SWAPv2_TblGen.c:1456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SAKEP.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/SAKEP.cpp -o ../gcc/build/linux/SAKEP.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/SAKEP.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_SetBSParam(SAKEPContainer*, const unsigned char*, unsigned int, const unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:277:29: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp:278:29: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GetAuthClient(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:419:16: warning: unused variable 'pDecryptedGx' [-Wunused-variable]
+../Src/SAKEP.cpp:420:15: warning: unused variable 'nDecryptedGxLen' [-Wunused-variable]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:574:16: warning: unused variable 'pWc' [-Wunused-variable]
+../Src/SAKEP.cpp:575:15: warning: unused variable 'nWcLen' [-Wunused-variable]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ApplyKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:5114:34: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ReverseKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:8210:34: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In constructor 'SAkepApi::SAkepApi()':
+../Src/SAKEP.cpp:64:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In constructor 'SAkepApi::SAkepApi(Handle_CTX*, ModeType)':
+../Src/SAKEP.cpp:76:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void* SAkepApi::SAKEPMalloc(int)':
+../Src/SAKEP.cpp:100:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::SAKEPFree(void*)':
+../Src/SAKEP.cpp:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'SAKEPContainer* SAkepApi::create_SAKEPContainer()':
+../Src/SAKEP.cpp:131:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::destroy_SAKEPContainer(SAKEPContainer*)':
+../Src/SAKEP.cpp:146:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::EncryptGy(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:188:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::DecryptGx(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:229:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_SetBSParam(SAKEPContainer*, const unsigned char*, unsigned int, const unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:285:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GenerateBSPublic(SAKEPContainer*, unsigned char*, unsigned int, unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:396:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GetAuthClient(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetGy(unsigned char*, unsigned int, unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:560:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerAck(Handle_CTX*, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1201:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParserClientAck(Handle_CTX*, unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1323:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetPrivatekeyY(unsigned char*)':
+../Src/SAKEP.cpp:1689:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetPrivatekeyY(unsigned char*)':
+../Src/SAKEP.cpp:1696:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetMac(unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1714:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetMac(unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1721:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetMyMacLen(unsigned int*)':
+../Src/SAKEP.cpp:1728:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetPublicKeyY(unsigned char*)':
+../Src/SAKEP.cpp:1735:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetPublicKeyY(unsigned char*)':
+../Src/SAKEP.cpp:1744:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::EncryptParameterDataWithWB(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:1756:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:721:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::DecryptParameterDataWithWB(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:1769:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ApplyKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:5117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ApplyPasswordTransform(unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1966:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParseClientHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1129:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ReverseKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ReversePasswordTransform(unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:2021:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParseRecordMsg(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1681:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorRecordMsg(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1472:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:1771:13: warning: 'void X931_Prng(unsigned char*, unsigned char*, unsigned int, unsigned char*)' defined but not used [-Wunused-function]
+SPCApi.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/SPCApi.cpp -o ../gcc/build/linux/SPCApi.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/SPCApi.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/SPCApi.cpp: In constructor 'SPCApi::SPCApi()':
+../Src/SPCApi.cpp:25:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: At global scope:
+../Src/SPCApi.cpp:328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::InitSPCContext(SPCHandle_CTX*, ModeType, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:98:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'void SPCApi::DestroySPCContext(SPCHandle_CTX*)':
+../Src/SPCApi.cpp:130:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'void SPCApi::ClearSPCSessionContext(SPCHandle_CTX*)':
+../Src/SPCApi.cpp:139:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseClientHello(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorServerHello(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:204:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorServerAck(SPCHandle_CTX*, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:235:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseClientAck(SPCHandle_CTX*, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:265:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorRecordMsg(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:297:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseRecordMsg(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+Util.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/Util.cpp -o ../gcc/build/linux/Util.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/Util.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+-- Archiving static and dynamic library SAKEP Client --
+../gcc/build/linux/libPAKEClient.so ../gcc/build/linux/libPAKEClient.a
+
+jounsun.beak@DO-JOUNSUN-BE02 /d/SPC_Client/jni/SPC/gcc
+$ make clean
+-- Clean --
+
+jounsun.beak@DO-JOUNSUN-BE02 /d/SPC_Client/jni/SPC/gcc
+$ make
+aes.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/aes.c -o ../gcc/build/linux/base/aes.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/aes.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/aes.c: In function 'SDRM_rijndaelKeySetupEnc':
+../Src/base/aes.c:815:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelKeySetupDec':
+../Src/base/aes.c:869:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelEncrypt':
+../Src/base/aes.c:1065:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_rijndaelDecrypt':
+../Src/base/aes.c:1261:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES128_Encryption':
+../Src/base/aes.c:1282:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES128_Decryption':
+../Src/base/aes.c:1303:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES192_Encryption':
+../Src/base/aes.c:1324:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES192_Decryption':
+../Src/base/aes.c:1345:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES256_Encryption':
+../Src/base/aes.c:1366:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/aes.c: In function 'SDRM_AES256_Decryption':
+../Src/base/aes.c:1387:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ANSI_x931.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/ANSI_x931.c -o ../gcc/build/linux/base/ANSI_x931.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/ANSI_x931.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/ANSI_x931.c: In function 'SDRM_RNG_X931':
+../Src/base/ANSI_x931.c:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+bignum.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/bignum.c -o ../gcc/build/linux/base/bignum.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/bignum.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/bignum.c: In function 'SDRM_DWD_Classical_REDC':
+../Src/base/bignum.c:768:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_DIGIT_Gcd':
+../Src/base/bignum.c:798:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_PrintBN':
+../Src/base/bignum.c:838:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN2OS':
+../Src/base/bignum.c:921:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_I2OSP':
+../Src/base/bignum.c:986:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Clr':
+../Src/base/bignum.c:1004:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Copy':
+../Src/base/bignum.c:1028:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Alloc':
+../Src/base/bignum.c:1053:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Init':
+../Src/base/bignum.c:1079:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Cmp':
+../Src/base/bignum.c:1102:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Cmp_sign':
+../Src/base/bignum.c:1134:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Rand':
+../Src/base/bignum.c:1167:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_SHL':
+../Src/base/bignum.c:1215:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_OS2BN':
+../Src/base/bignum.c:961:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_SHR':
+../Src/base/bignum.c:1266:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Add':
+../Src/base/bignum.c:1376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Sub':
+../Src/base/bignum.c:1477:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Mul':
+../Src/base/bignum.c:1532:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_Div':
+../Src/base/bignum.c:1633:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModRed':
+../Src/base/bignum.c:1828:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModSub':
+../Src/base/bignum.c:1779:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModAdd':
+../Src/base/bignum.c:1709:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModMul':
+../Src/base/bignum.c:1878:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModInv':
+../Src/base/bignum.c:2019:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Rzn2zn':
+../Src/base/bignum.c:2093:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Mul':
+../Src/base/bignum.c:2171:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Init':
+../Src/base/bignum.c:2328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Free':
+../Src/base/bignum.c:2343:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_num_bits':
+../Src/base/bignum.c:2369:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_MONT_Set':
+../Src/base/bignum.c:2300:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_UINT32_num_bits':
+../Src/base/bignum.c:2398:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_INT_num_bits':
+../Src/base/bignum.c:2424:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModExp':
+../Src/base/bignum.c:2502:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_ModExp2':
+../Src/base/bignum.c:2584:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_CheckRelativelyPrime':
+../Src/base/bignum.c:2643:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: In function 'SDRM_BN_MILLER_RABIN':
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c: At top level:
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/bignum.c:2748:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+des.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/des.c -o ../gcc/build/linux/base/des.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/des.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/des.c: In function 'SDRM_DES_KeySched':
+../Src/base/des.c:79:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES_Encryption':
+../Src/base/des.c:124:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES64_Encryption':
+../Src/base/des.c:145:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/des.c: In function 'SDRM_DES64_Decryption':
+../Src/base/des.c:166:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecc.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/ecc.c -o ../gcc/build/linux/base/ecc.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/ecc.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/ecc.c: In function 'SDRM_ECC_Init':
+../Src/base/ecc.c:47:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CURVE_Init':
+../Src/base/ecc.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CHECK_EC_POINT_ZERO':
+../Src/base/ecc.c:121:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_Mont_Jm2Jc':
+../Src/base/ecc.c:157:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_Mont_Jc2Jm':
+../Src/base/ecc.c:190:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Add':
+../Src/base/ecc.c:283:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Double_Jc':
+../Src/base/ecc.c:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Add_Jc':
+../Src/base/ecc.c:414:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Double_Jm':
+../Src/base/ecc.c:607:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_Chain':
+../Src/base/ecc.c:784:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_kP':
+../Src/base/ecc.c:989:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/ecc.c: In function 'SDRM_CTX_EC_2kP':
+../Src/base/ecc.c:1274:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+fast_math.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/fast_math.c -o ../gcc/build/linux/base/fast_math.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/fast_math.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/fast_math.c: In function 'SDRM_ll_Cmp':
+../Src/base/fast_math.c:61:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Copy':
+../Src/base/fast_math.c:73:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_RShift':
+../Src/base/fast_math.c:98:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_LShift':
+../Src/base/fast_math.c:124:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_getMSW':
+../Src/base/fast_math.c:146:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_getMSB':
+../Src/base/fast_math.c:174:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_getBitValue':
+../Src/base/fast_math.c:191:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_bit_getBitsValue':
+../Src/base/fast_math.c:245:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Add':
+../Src/base/fast_math.c:280:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_AddCarry':
+../Src/base/fast_math.c:311:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Sub':
+../Src/base/fast_math.c:340:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Mul1':
+../Src/base/fast_math.c:375:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_MulAdd1':
+../Src/base/fast_math.c:410:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_MulAdd':
+../Src/base/fast_math.c:431:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Mul':
+../Src/base/fast_math.c:453:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Square':
+../Src/base/fast_math.c:505:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_Rem':
+../Src/base/fast_math.c:539:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Inverse':
+../Src/base/fast_math.c:576:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Rem':
+../Src/base/fast_math.c:617:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Square':
+../Src/base/fast_math.c:646:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_mont_Mul':
+../Src/base/fast_math.c:689:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/fast_math.c: In function 'SDRM_ll_ExpMod':
+../Src/base/fast_math.c:906:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+hash.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/hash.c -o ../gcc/build/linux/base/hash.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/hash.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/hash.c: In function 'SDRM_SHA1_init':
+../Src/base/hash.c:43:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_update':
+../Src/base/hash.c:66:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_final':
+../Src/base/hash.c:88:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA1_hash':
+../Src/base/hash.c:114:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_init':
+../Src/base/hash.c:135:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_update':
+../Src/base/hash.c:158:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_final':
+../Src/base/hash.c:179:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA224_hash':
+../Src/base/hash.c:205:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_init':
+../Src/base/hash.c:226:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_update':
+../Src/base/hash.c:249:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_final':
+../Src/base/hash.c:270:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA256_hash':
+../Src/base/hash.c:296:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_init':
+../Src/base/hash.c:319:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_update':
+../Src/base/hash.c:342:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_final':
+../Src/base/hash.c:364:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA384_hash':
+../Src/base/hash.c:390:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_init':
+../Src/base/hash.c:411:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_update':
+../Src/base/hash.c:434:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_final':
+../Src/base/hash.c:456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_SHA512_hash':
+../Src/base/hash.c:482:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_init':
+../Src/base/hash.c:505:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_update':
+../Src/base/hash.c:528:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_final':
+../Src/base/hash.c:550:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/hash.c: In function 'SDRM_MD5_hash':
+../Src/base/hash.c:576:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+md5.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/md5.c -o ../gcc/build/linux/base/md5.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/md5.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/md5.c: In function 'SDRM_MD5_Init':
+../Src/base/md5.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/md5.c: In function 'SDRM_MD5_Update':
+../Src/base/md5.c:139:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/md5.c: In function 'SDRM_MD5_Final':
+../Src/base/md5.c:165:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+moo.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/moo.c -o ../gcc/build/linux/base/moo.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/moo.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/moo.c: In function 'SDRM_ECB_Enc':
+../Src/base/moo.c:55:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_ECB_Dec':
+../Src/base/moo.c:91:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CBC_Enc':
+../Src/base/moo.c:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CBC_Dec':
+../Src/base/moo.c:230:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CFB_Enc':
+../Src/base/moo.c:289:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CFB_Dec':
+../Src/base/moo.c:348:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_OFB_Enc':
+../Src/base/moo.c:407:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/moo.c: In function 'SDRM_CTR_Enc':
+../Src/base/moo.c:485:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+pkcs1_v21.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/pkcs1_v21.c -o ../gcc/build/linux/base/pkcs1_v21.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/pkcs1_v21.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsaes_pkcs15':
+../Src/base/pkcs1_v21.c:155:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsassa_pkcs15':
+../Src/base/pkcs1_v21.c:564:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_MGF1':
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsassa_pss':
+../Src/base/pkcs1_v21.c:825:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: In function 'SDRM_Padding_Rsaes_oaep':
+../Src/base/pkcs1_v21.c:417:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c: At top level:
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/pkcs1_v21.c:938:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rc4.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/rc4.c -o ../gcc/build/linux/base/rc4.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/rc4.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/rc4.c: In function 'SDRM_RC4_Setup':
+../Src/base/rc4.c:117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/rc4.c: In function 'SDRM_RC4_PRNG':
+../Src/base/rc4.c:158:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+sha1.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/sha1.c -o ../gcc/build/linux/base/sha1.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/sha1.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Init':
+../Src/base/sha1.c:137:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Update':
+../Src/base/sha1.c:318:5: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_SHA1_Final':
+../Src/base/sha1.c:367:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha1.c: In function 'SDRM_endianTest':
+../Src/base/sha1.c:469:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+sha2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/sha2.c -o ../gcc/build/linux/base/sha2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/sha2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Transf':
+../Src/base/sha2.c:321:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Init':
+../Src/base/sha2.c:333:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Update':
+../Src/base/sha2.c:366:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA256_Final':
+../Src/base/sha2.c:391:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Transf':
+../Src/base/sha2.c:444:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Init':
+../Src/base/sha2.c:456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Update':
+../Src/base/sha2.c:489:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA512_Final':
+../Src/base/sha2.c:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Init':
+../Src/base/sha2.c:528:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Update':
+../Src/base/sha2.c:561:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA384_Final':
+../Src/base/sha2.c:586:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Init':
+../Src/base/sha2.c:601:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Update':
+../Src/base/sha2.c:635:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: In function 'SDRM_SHA224_Final':
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c: At top level:
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/sha2.c:660:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+snow2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/base/snow2.c -o ../gcc/build/linux/base/snow2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/base/snow2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_Setup':
+../Src/base/snow2.c:344:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_getKeyStream64':
+../Src/base/snow2.c:374:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/base/snow2.c: In function 'SDRM_SNOW2_getKeyStream':
+../Src/base/snow2.c:402:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+cmac.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/cmac.c -o ../gcc/build/linux/middle/cmac.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/cmac.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_init':
+../Src/middle/cmac.c:117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_update':
+../Src/middle/cmac.c:173:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_final':
+../Src/middle/cmac.c:219:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/cmac.c: In function 'SDRM_CMAC_getMAC':
+../Src/middle/cmac.c:258:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+dh.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/dh.c -o ../gcc/build/linux/middle/dh.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/dh.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/dh.c: In function 'SDRM_GenerateDHParam':
+../Src/middle/dh.c:119:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_SetDHParam':
+../Src/middle/dh.c:166:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_GenerateDHPrivate':
+../Src/middle/dh.c:232:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_GetDHSharedSecret':
+../Src/middle/dh.c:306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dh.c: In function 'SDRM_FreeDHContext':
+../Src/middle/dh.c:330:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+dsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/dsa.c -o ../gcc/build/linux/middle/dsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/dsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/dsa.c: In function 'SDRM_Add_DW2BA':
+../Src/middle/dsa.c:61:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_InitCrt':
+../Src/middle/dsa.c:88:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_SetParam':
+../Src/middle/dsa.c:130:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_SetKeyPair':
+../Src/middle/dsa.c:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_GenParam':
+../Src/middle/dsa.c:358:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_GenKeypair':
+../Src/middle/dsa.c:429:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_sign':
+../Src/middle/dsa.c:509:2: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/dsa.c: In function 'SDRM_DSA_verify':
+../Src/middle/dsa.c:600:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecdh.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/ecdh.c -o ../gcc/build/linux/middle/ecdh.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/ecdh.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/ecdh.c: In function 'SDRM_generateDH1stPhaseKey':
+../Src/middle/ecdh.c:101:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdh.c: In function 'SDRM_generateDHKey':
+../Src/middle/ecdh.c:202:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+ecdsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/ecdsa.c -o ../gcc/build/linux/middle/ecdsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/ecdsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_KEY_GEN':
+../Src/middle/ecdsa.c:96:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_SIG_GEN':
+../Src/middle/ecdsa.c:212:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_CTX_ECDSA_SIG_VERIFY':
+../Src/middle/ecdsa.c:363:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECDSA_sign':
+../Src/middle/ecdsa.c:391:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECDSA_verify':
+../Src/middle/ecdsa.c:434:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_Set_CTX':
+../Src/middle/ecdsa.c:531:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_genKeypair':
+../Src/middle/ecdsa.c:598:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/ecdsa.c: In function 'SDRM_ECC_setKeypair':
+../Src/middle/ecdsa.c:662:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+hmac.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/hmac.c -o ../gcc/build/linux/middle/hmac.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/hmac.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_update':
+../Src/middle/hmac.c:285:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_final':
+../Src/middle/hmac.c:433:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_getK0':
+../Src/middle/hmac.c:570:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_init':
+../Src/middle/hmac.c:230:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/hmac.c: In function 'SDRM_HMAC_getMAC':
+../Src/middle/hmac.c:472:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rng.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/rng.c -o ../gcc/build/linux/middle/rng.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/rng.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/rng.c: In function 'SDRM_X931_seed':
+../Src/middle/rng.c:41:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rng.c: In function 'SDRM_X931_get':
+../Src/middle/rng.c:67:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+rsa.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/rsa.c -o ../gcc/build/linux/middle/rsa.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/rsa.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/rsa.c: In function 'SDRM_RSA_InitCrt':
+../Src/middle/rsa.c:58:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_setNED':
+../Src/middle/rsa.c:105:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_setNEDPQ':
+../Src/middle/rsa.c:218:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateKey':
+../Src/middle/rsa.c:376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateND':
+../Src/middle/rsa.c:520:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_GenerateDwithPQE':
+../Src/middle/rsa.c:665:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_encrypt':
+../Src/middle/rsa.c:762:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_decrypt':
+../Src/middle/rsa.c:859:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_decryptByCRT':
+../Src/middle/rsa.c:1029:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_sign':
+../Src/middle/rsa.c:1117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/rsa.c: In function 'SDRM_RSA_verify':
+../Src/middle/rsa.c:1206:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+symmetric.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/symmetric.c -o ../gcc/build/linux/middle/symmetric.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/symmetric.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/symmetric.c: In function 'SDRM_getEncRoundKey':
+../Src/middle/symmetric.c:68:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_getDecRoundKey':
+../Src/middle/symmetric.c:114:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_init':
+../Src/middle/symmetric.c:188:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_process':
+../Src/middle/symmetric.c:351:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_AES_final':
+../Src/middle/symmetric.c:606:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_RC4_init':
+../Src/middle/symmetric.c:638:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_RC4_process':
+../Src/middle/symmetric.c:670:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_SNOW2_init':
+../Src/middle/symmetric.c:703:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_SNOW2_process':
+../Src/middle/symmetric.c:797:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_init':
+../Src/middle/symmetric.c:860:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_process':
+../Src/middle/symmetric.c:1014:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_DES_final':
+../Src/middle/symmetric.c:1231:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_init':
+../Src/middle/symmetric.c:1306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_process':
+../Src/middle/symmetric.c:1460:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/symmetric.c: In function 'SDRM_TDES_final':
+../Src/middle/symmetric.c:1679:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+tdes.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/middle/tdes.c -o ../gcc/build/linux/middle/tdes.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/middle/tdes.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/middle/tdes.c: In function 'SDRM_TDES_KeySched':
+../Src/middle/tdes.c:65:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES_Encryption':
+../Src/middle/tdes.c:86:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES64_Encryption':
+../Src/middle/tdes.c:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/middle/tdes.c: In function 'SDRM_TDES64_Decryption':
+../Src/middle/tdes.c:129:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+CC_API.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/CC_API.c -o ../gcc/build/linux/CC_API.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/CC_API.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/CC_API.c: In function 'CCMalloc':
+../Src/CC_API.c:46:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'CCFree':
+../Src/CC_API.c:54:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'create_CryptoCoreContainer':
+../Src/CC_API.c:336:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/CC_API.c: In function 'destroy_CryptoCoreContainer':
+../Src/CC_API.c:438:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+DRMLog.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/DRMLog.c -o ../gcc/build/linux/DRMLog.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/DRMLog.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+SDWAP.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SDWAP.c -o ../gcc/build/linux/WhiteBox/SDWAP.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SDWAP.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SDWAP.c: In function 'SDWAP_Process':
+../Src/WhiteBox/SDWAP.c:498:15: warning: variable 'Nk' set but not used [-Wunused-but-set-variable]
+../Src/WhiteBox/SDWAP.c:569:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP.c: At top level:
+../Src/WhiteBox/SDWAP.c:569:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SDWAP_TblGen.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SDWAP_TblGen.c -o ../gcc/build/linux/WhiteBox/SDWAP_TblGen.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation':
+../Src/WhiteBox/SDWAP_TblGen.c:210:25: warning: initialization makes integer from pointer without a cast [enabled by default]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'MakeEachKeyLookup':
+../Src/WhiteBox/SDWAP_TblGen.c:252:17: warning: unused variable 'pBeforeLKCol' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GeneratePVector':
+../Src/WhiteBox/SDWAP_TblGen.c:1309:15: warning: variable 'rnd' set but not used [-Wunused-but-set-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateTable':
+../Src/WhiteBox/SDWAP_TblGen.c:1566:22: warning: unused variable 'pKeyBitPBox' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c:1565:23: warning: unused variable 'pKeyBytePBox' [-Wunused-variable]
+../Src/WhiteBox/SDWAP_TblGen.c: At top level:
+../Src/WhiteBox/SDWAP_TblGen.c:1372:13: warning: 'SDWAP_GeneratePVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1418:13: warning: 'SDWAP_GenerateInvPVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1464:13: warning: 'SDWAP_GenerateInvPVector_fstest' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1494:13: warning: 'SDWAP_ConvertPBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c:1522:13: warning: 'SDWAP_RandomizePBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation':
+../Src/WhiteBox/SDWAP_TblGen.c:229:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_BitPermutation_LK':
+../Src/WhiteBox/SDWAP_TblGen.c:235:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateBitPBox':
+../Src/WhiteBox/SDWAP_TblGen.c:521:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_ProcessBitPBox':
+../Src/WhiteBox/SDWAP_TblGen.c:590:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: In function 'SDWAP_GenerateTable':
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c: At top level:
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SDWAP_TblGen.c:1722:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SWAPv2.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SWAPv2.c -o ../gcc/build/linux/WhiteBox/SWAPv2.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SWAPv2.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SWAPv2.c: In function 'SWAPv2_Process':
+../Src/WhiteBox/SWAPv2.c:306:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SWAPv2_TblGen.c
+gcc -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/WhiteBox/SWAPv2_TblGen.c -o ../gcc/build/linux/WhiteBox/SWAPv2_TblGen.o
+cc1.exe: warning: command line option '-fpermissive' is valid for C++/ObjC++ but not for C [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'BitPermutation':
+../Src/WhiteBox/SWAPv2_TblGen.c:275:25: warning: initialization makes integer from pointer without a cast [enabled by default]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'ProcessBytePBox':
+../Src/WhiteBox/SWAPv2_TblGen.c:434:15: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+../Src/WhiteBox/SWAPv2_TblGen.c: At top level:
+../Src/WhiteBox/SWAPv2_TblGen.c:1119:13: warning: 'GeneratePVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1165:13: warning: 'GenerateInvPVector_fst' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1211:13: warning: 'GenerateInvPVector_fstest' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1241:13: warning: 'ConvertPBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c:1269:13: warning: 'RandomizePBox' defined but not used [-Wunused-function]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'BitPermutation':
+../Src/WhiteBox/SWAPv2_TblGen.c:294:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'ProcessBitPBox':
+../Src/WhiteBox/SWAPv2_TblGen.c:376:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/WhiteBox/SWAPv2_TblGen.c: In function 'SWAPv2_GenerateTable':
+../Src/WhiteBox/SWAPv2_TblGen.c:1456:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+SAKEP.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/SAKEP.cpp -o ../gcc/build/linux/SAKEP.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/SAKEP.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_SetBSParam(SAKEPContainer*, const unsigned char*, unsigned int, const unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:277:29: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp:278:29: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GetAuthClient(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:419:16: warning: unused variable 'pDecryptedGx' [-Wunused-variable]
+../Src/SAKEP.cpp:420:15: warning: unused variable 'nDecryptedGxLen' [-Wunused-variable]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:574:16: warning: unused variable 'pWc' [-Wunused-variable]
+../Src/SAKEP.cpp:575:15: warning: unused variable 'nWcLen' [-Wunused-variable]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ApplyKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:5114:34: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ReverseKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:8210:34: warning: cast from type 'const unsigned char*' to type 'unsigned char*' casts away qualifiers [-Wcast-qual]
+../Src/SAKEP.cpp: In constructor 'SAkepApi::SAkepApi()':
+../Src/SAKEP.cpp:64:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In constructor 'SAkepApi::SAkepApi(Handle_CTX*, ModeType)':
+../Src/SAKEP.cpp:76:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void* SAkepApi::SAKEPMalloc(int)':
+../Src/SAKEP.cpp:100:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::SAKEPFree(void*)':
+../Src/SAKEP.cpp:108:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'SAKEPContainer* SAkepApi::create_SAKEPContainer()':
+../Src/SAKEP.cpp:131:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::destroy_SAKEPContainer(SAKEPContainer*)':
+../Src/SAKEP.cpp:146:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::EncryptGy(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:188:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::DecryptGx(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:229:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_SetBSParam(SAKEPContainer*, const unsigned char*, unsigned int, const unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:285:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GenerateBSPublic(SAKEPContainer*, unsigned char*, unsigned int, unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:396:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SAKEP_GetAuthClient(unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:514:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetGy(unsigned char*, unsigned int, unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:560:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerAck(Handle_CTX*, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1201:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParserClientAck(Handle_CTX*, unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1323:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetPrivatekeyY(unsigned char*)':
+../Src/SAKEP.cpp:1689:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetPrivatekeyY(unsigned char*)':
+../Src/SAKEP.cpp:1696:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetMac(unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1714:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetMac(unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1721:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetMyMacLen(unsigned int*)':
+../Src/SAKEP.cpp:1728:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::SetPublicKeyY(unsigned char*)':
+../Src/SAKEP.cpp:1735:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GetPublicKeyY(unsigned char*)':
+../Src/SAKEP.cpp:1744:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::EncryptParameterDataWithWB(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:1756:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorServerHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:721:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::DecryptParameterDataWithWB(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:1769:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ApplyKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:5117:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ApplyPasswordTransform(unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1966:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParseClientHello(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int)':
+../Src/SAKEP.cpp:1129:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'void SAkepApi::ReverseKeyTransform(unsigned char*, unsigned char*)':
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ReversePasswordTransform(unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:2021:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::ParseRecordMsg(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1681:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: In member function 'int SAkepApi::GeneratorRecordMsg(Handle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SAKEP.cpp:1472:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp: At global scope:
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:8213:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SAKEP.cpp:1771:13: warning: 'void X931_Prng(unsigned char*, unsigned char*, unsigned int, unsigned char*)' defined but not used [-Wunused-function]
+SPCApi.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/SPCApi.cpp -o ../gcc/build/linux/SPCApi.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/SPCApi.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/SPCApi.cpp: In constructor 'SPCApi::SPCApi()':
+../Src/SPCApi.cpp:25:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: At global scope:
+../Src/SPCApi.cpp:328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::InitSPCContext(SPCHandle_CTX*, ModeType, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:98:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'void SPCApi::DestroySPCContext(SPCHandle_CTX*)':
+../Src/SPCApi.cpp:130:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'void SPCApi::ClearSPCSessionContext(SPCHandle_CTX*)':
+../Src/SPCApi.cpp:139:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseClientHello(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:172:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorServerHello(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:204:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorServerAck(SPCHandle_CTX*, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:235:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseClientAck(SPCHandle_CTX*, unsigned char*, unsigned int)':
+../Src/SPCApi.cpp:265:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::GeneratorRecordMsg(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:297:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+../Src/SPCApi.cpp: In member function 'int SPCApi::ParseRecordMsg(SPCHandle_CTX*, unsigned char*, unsigned int, unsigned char*, unsigned int*)':
+../Src/SPCApi.cpp:328:1: warning: visibility attribute not supported in this configuration; ignored [-Wattributes]
+Util.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/Util.cpp -o ../gcc/build/linux/Util.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/Util.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+DtcpCTcpSocket.cpp
+g++ -O2 -D__linux -DLINUX -DUNIX -DMTHREAD -D_REENTRANT -DPRINT_LOG -D_WIN32_ -Wall -Wextra -Wcast-align -Wno-unused-parameter -Wshadow -Wwrite-strings -Wcast-qual -fstrict-aliasing -fsigned-char -ffunction-sections -fdata-sections -fPIC  -Wstrict-prototypes -fpermissive -I../Inc -I../Inc/middle -I.
+./Inc/base -I../Inc/WhiteBox -c ../Src/DtcpCTcpSocket.cpp -o ../gcc/build/linux/DtcpCTcpSocket.o
+cc1plus.exe: warning: command line option '-Wstrict-prototypes' is valid for C/ObjC but not for C++ [enabled by default]
+../Src/DtcpCTcpSocket.cpp:1:0: warning: -fPIC ignored for target (all code is position independent) [enabled by default]
+../Src/DtcpCTcpSocket.cpp: In member function 'long int DtcpCTcpSocket::connectSocket(sockaddr_in*)':
+../Src/DtcpCTcpSocket.cpp:330:26: error: 'GetLocalIP' was not declared in this scope
+../Src/DtcpCTcpSocket.cpp:344:10: warning: unused variable 'i' [-Wunused-variable]
+make: *** [../gcc/build/linux/DtcpCTcpSocket.o] Error 1
+
+jounsun.beak@DO-JOUNSUN-BE02 /d/SPC_Client/jni/SPC/gcc
+$

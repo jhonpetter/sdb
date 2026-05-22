@@ -1,0 +1,78 @@
+/*
+* SDB - Smart Development Bridge
+*
+* Copyright (c) 2000 - 2013 Samsung Electronics Co., Ltd. All rights reserved.
+*
+* Contact:
+* Ho Namkoong <ho.namkoong@samsung.com>
+* Yoonki Park <yoonki.park@samsung.com>
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+* http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*
+* Contributors:
+* - S-Core Co., Ltd
+*
+*/
+
+#ifndef COMMANDLINE_H_
+#define COMMANDLINE_H_
+
+#ifndef PATH_MAX
+#define PATH_MAX 4096
+#endif
+
+#ifndef NAME_MAX
+#define NAME_MAX 255
+#endif
+
+#ifndef MAX_INPUT
+#define MAX_INPUT 255
+#endif
+
+#ifndef INPUT_FD
+#define INPUT_FD 0
+#endif
+
+#define SHELLCMD_BUF_SIZE   4096
+#define SDB_STDIN_OFF       0
+#define SDB_STDIN_ON        1
+#define SYNCWINSZ_UNSUPPORTED   0
+#define SYNCWINSZ_SUPPORTED     1
+
+struct sdb_stdin_info {
+    int stdin_fd;
+    int remote_fd;
+    int enable_sync_winsz;
+};
+
+struct sdb_version {
+    int major;
+    int minor;
+    int patch;
+};
+
+int send_shellcommand(char* buf);
+int process_cmdline(int argc, char** argv);
+void read_and_dump(int fd);
+int interactive_shell();
+int is_support_eshell(struct sdb_version *pversion);
+int get_screensize(int* lines, int* columns);
+void sdb_execute_shell(int fd, int stdin_on, int enable_sync_winsz);
+int check_syncwinsz_support(void);
+int get_server_port();
+int get_platform_version(struct sdb_version *pversion);
+int __sdb_command(const char* cmd);
+int match_capability_key_value(char* cap, char* key, char* value);
+int parse_capability_key_value(char* cap, char* key, char* value, int len);
+
+#endif /* COMMANDLINE_H_ */

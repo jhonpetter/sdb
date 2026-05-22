@@ -1,0 +1,23 @@
+Version:3.1.0
+Source:sdb
+Maintainer: Jaewon Lim <jaewon81.lim@samsung.com>, SangJin Kim <sangjin3.kim@samsung.com>
+
+Package:sdb
+OS:ubuntu-32
+Build-host-os:ubuntu-32
+Description:Smart Development Bridge for device management
+
+Package:sdb
+OS:windows-32,windows-64
+Build-host-os:windows-32
+Description:Smart Development Bridge for device management
+
+Package:sdb
+OS:ubuntu-64
+Build-host-os:ubuntu-64
+Description:Smart Development Bridge for device management
+
+Package:sdb
+OS:macos-64
+Build-host-os:macos-64
+Description:Smart Development Bridge for device management

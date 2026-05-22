@@ -1,0 +1,249 @@
+/*
+ * Copyright (c) 2011 Samsung Electronics Co., Ltd All Rights Reserved
+ *
+ * Licensed under the Apache License, Version 2.0 (the License);
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an AS IS BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <errno.h>
+#include <string.h>
+#include <stdarg.h> // for using va_list
+#include "log.h"
+#include "utils.h"
+#include "strutils.h"
+
+int loglevel_mask = 0;
+//0 do not trace packet
+//1 trace packet with MAX_DUMP_HEX_LEN
+//2 trace full packet
+int trace_packet = 0;
+
+static struct {
+    char*  name;
+    LogLevel level;
+} log_levels[] = {
+    { "all", 0 },
+    { "fatal", SDBLOG_FATAL },
+    { "error", SDBLOG_ERROR },
+    { "debug", SDBLOG_DEBUG },
+    { "info", SDBLOG_INFO },
+    { "fixme", SDBLOG_FIXME },
+    { NULL, 0 }
+};
+
+//logging full packet
+void logging_hex(char* hex, char* asci) {
+
+    sdb_mutex_lock(&D_lock, NULL);
+    int hex_len = s_strnlen(hex, 4096);
+
+    char* hex_ptr = hex;
+
+    fprintf(stderr, "HEX:\n");
+    while(hex_len > 512) {
+        char hex_tmp = hex_ptr[512];
+        hex_ptr[512] = '\0';
+
+        fprintf(stderr, "%s", hex_ptr);
+        hex_len = hex_len - 512;
+        hex_ptr[512] = hex_tmp;
+        hex_ptr = hex_ptr + 512;
+    }
+
+    fprintf(stderr, "%s\n", hex_ptr);
+
+
+    int asci_len = s_strnlen(asci, 4096);
+    char* asci_ptr = asci;
+
+    fprintf(stderr, "ASCI:\n");
+    while(asci_len > 512) {
+        char asci_tmp = asci_ptr[512];
+        asci_ptr[512] = '\0';
+
+        fprintf(stderr, "%s", asci_ptr);
+        asci_len = asci_len - 512;
+        asci_ptr[512] = asci_tmp;
+        asci_ptr = asci_ptr + 512;
+    }
+
+    fprintf(stderr, "%s\n", asci_ptr);
+    fprintf(stderr, "--------------LOGGING HEX END--------------\n\n");
+    fflush(stderr);
+    sdb_mutex_unlock(&D_lock, NULL);
+}
+
+void logging(LogLevel level, const char *filename, const char *funcname, int line_number, const char *fmt, ...) {
+    char *name = NULL;
+    char mbuf[1024];
+    char fbuf[1024];
+    va_list args;
+
+    va_start(args, fmt);
+
+    switch (level) {
+        case SDBLOG_FATAL:
+            name = log_levels[SDBLOG_FATAL].name;
+            break;
+        case SDBLOG_ERROR:
+            name = log_levels[SDBLOG_ERROR].name;
+            break;
+        case SDBLOG_INFO:
+            name = log_levels[SDBLOG_INFO].name;
+            break;
+        case SDBLOG_DEBUG:
+            name = log_levels[SDBLOG_DEBUG].name;;
+            break;
+        case SDBLOG_FIXME:
+            name = log_levels[SDBLOG_FIXME].name;
+            break;
+        default:
+            name = log_levels[SDBLOG_INFO].name;
+            break;
+    }
+    // get time
+    char now_time[100] = {0, };
+    struct tm *now;
+    time_t t;
+    time(&t);
+    now = localtime(&t);
+    strftime(now_time, sizeof (now_time), "%b %d %Y %H:%M:%S", now);
+
+    snprintf(fbuf, sizeof(fbuf), "%s [%s][%s:%s():%d]%s", now_time, name, filename, funcname, line_number, fmt);
+    vsnprintf(mbuf, sizeof(mbuf), fbuf, args);
+    sdb_mutex_lock(&D_lock, NULL);
+    fprintf(stderr, "%s", mbuf);
+    sdb_mutex_unlock(&D_lock, NULL);
+    fflush(stderr);
+    va_end(args);
+}
+void print_error(int level, const char* situation, const char* reason) {
+
+    fprintf(stderr, "%s\n", error_message(level, situation, reason));
+    if(level == 1) {
+        fflush(stderr);
+        exit(255);
+    }
+}
+
+char* error_message(int level, const char* situation, const char* reason) {
+    char *format;
+    static char error_buf[255];
+    switch(level){
+    case 0:
+        format = "error";
+        break;
+    case 1:
+        format = "fatal";
+        break;
+    default:
+        format ="sdb";
+        break;
+    }
+
+    if(reason != NULL) {
+        snprintf(error_buf, sizeof(error_buf), "%s: %s: %s", format, situation, reason);
+    } else {
+        snprintf(error_buf, sizeof(error_buf), "%s: %s", format, situation);
+    }
+    return error_buf;
+}
+
+/*
+ *  print usage message to user
+ */
+void print_info(const char* message, ...){
+
+    char info_buf_format[INFO_LENGTH];
+
+    char *format = "info";
+
+    snprintf(info_buf_format, INFO_LENGTH, INFO_FORMAT, format, message);
+
+    va_list args;
+    va_start(args, message);
+
+    char info_buf[INFO_LENGTH];
+    vsnprintf(info_buf, INFO_LENGTH, info_buf_format, args);
+    fprintf(stdout, "%s\n", info_buf);
+    va_end(args);
+}
+
+char* F(const char* message, ...) {
+    va_list args;
+    va_start(args, message);
+
+    static char error_buf[255];
+    vsnprintf(error_buf, sizeof(error_buf), message, args);
+
+    va_end(args);
+    return error_buf;
+}
+
+static void log_parse(char* args) {
+    char *level, *levels, *next;
+
+    levels = strdup(args);
+    if (levels == NULL) {
+        return;
+    }
+    int i=0;
+    for (level = levels; level; level = next) {
+        next = strchr(level, ',' );
+        if (next != NULL) {
+            *next++ = 0;
+        }
+
+        for (i = 0; log_levels[i].name != NULL; i++) {
+            if (!strcmp(level, log_levels[i].name))
+            {
+                if (!strcmp("all",log_levels[i].name)) {
+                    loglevel_mask = ~0;
+                    SAFE_FREE(levels);
+                    return;
+                }
+                loglevel_mask |= 1 << log_levels[i].level;
+                break;
+            }
+        }
+    }
+    SAFE_FREE(levels);
+}
+
+void log_init(void)
+{
+    char*  sdb_debug = NULL;
+
+    if ((sdb_debug = getenv(DEBUG_ENV))) {
+        log_parse(sdb_debug);
+    }
+
+    char* trace_packet_char;
+    trace_packet_char = getenv(TRACE_PACKET);
+    if(trace_packet_char!= NULL && !strcmp(trace_packet_char, "true")) {
+        trace_packet = 2;
+    }
+    else if ((loglevel_mask & (1 << SDBLOG_INFO)) != 0) {
+        trace_packet = 1;
+    }
+}
+
+void log_init_server(void)
+{
+    // policy changed (2016-10-05)
+    // sdb server print fatal & error log even if no SDB_DEBUG env is set
+    loglevel_mask |= 1 << SDBLOG_FATAL;
+    loglevel_mask |= 1 << SDBLOG_ERROR;
+}
+

@@ -1,0 +1,13 @@
+Source: sdb
+Priority: extra
+Section: devel
+Maintainer: Tizen <tizen.infra@samsung.com>
+XSBC-Original-Maintainer: Chengwei Yang <chengwei.yang@intel.com>, Ed Bartosh <eduard.bartosh@intel.com>
+Build-Depends: debhelper (>= 7), libncurses5-dev, libssl1.0.0, libssl-dev
+Standards-Version: 3.9.2
+
+Package: sdb
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: SDB client
+

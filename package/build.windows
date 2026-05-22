@@ -1,0 +1,64 @@
+#!/bin/bash
+
+BUILD_DIR="${SRCDIR}/bin"
+TARGET_BIN="sdb"
+
+Sign() {
+	echo "${SIGNTOOL_SH}"
+	"${SIGNTOOL_SH}" "${BUILD_DIR}/${TARGET_BIN}.exe" "${BUILD_DIR}/${TARGET_BIN}.exe" "${TARGET_BIN}"
+}
+
+# clean
+clean()
+{
+        echo "=========================================CLEAN============================================"
+        make clean
+        rm -rf ${MSYS_SRCDIR}/*.zip
+        rm -rf ${MSYS_SRCDIR}/*.tar.gz
+}
+
+# build
+build() 
+{
+        echo "=========================================BUILD============================================"
+
+        # gets a source dir which uses the platform-dependent path
+        echo "Make sdb..."
+        make
+	if [ "${SIGNTOOL_SH}" ]; then
+		Sign
+	fi
+
+#       echo "Make ancicon..."
+#       cd "ansicon"
+#       if [ "${TARGET_OS}" = "windows-32" ]
+#       then
+#                make ansicon32
+#       else
+#                make ansicon32
+#       fi
+#       cd ..
+}
+
+# install
+install() 
+{
+        INSTALL_DIR=${MSYS_SRCDIR}/package/sdb.package.${TARGET_OS}
+
+        mkdir -p ${INSTALL_DIR}/data/tools
+        cp ${MSYS_SRCDIR}/bin/sdb.exe ${INSTALL_DIR}/data/tools/
+        if [ "${TARGET_OS}" = "windows-32" ]
+        then
+                cp ${MSYS_SRCDIR}/ansicon/x86/ansicon.exe ${INSTALL_DIR}/data/tools/
+                cp ${MSYS_SRCDIR}/ansicon/x86/ANSI32.dll ${INSTALL_DIR}/data/tools/
+        else
+                cp ${MSYS_SRCDIR}/ansicon/x86/ansicon.exe ${INSTALL_DIR}/data/tools/
+                cp ${MSYS_SRCDIR}/ansicon/x86/ANSI32.dll ${INSTALL_DIR}/data/tools/
+        fi
+        cp ${MSYS_SRCDIR}/package/sdb-run.bat ${INSTALL_DIR}/data/tools/
+}
+
+[ "$1" = "clean" ] && clean
+[ "$1" = "build" ] && build
+[ "$1" = "install" ] && install
+exit 0

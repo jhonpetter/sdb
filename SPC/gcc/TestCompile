@@ -1,0 +1,4 @@
+#!/bin/bash
+rm -rf test
+echo g++ -o SPC_Client ../../SPC_Client/Src/SPC_Client_SampleCode.cpp -L./build/linux/ -I../Inc/ -I../Inc/base -I../Inc/middle -I../Inc/WhileBox  -lPAKEClient
+g++ -o SPC_Client ../../SPC_Client/Src/SPC_Client_SampleCode.cpp -L./build/linux/ -I../Inc/ -I../Inc/base -I../Inc/middle -I../Inc/WhileBox  -lPAKEClient
