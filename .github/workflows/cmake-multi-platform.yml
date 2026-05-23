@@ -16,14 +16,14 @@ jobs:
       matrix:
         include:
           # 1. Compilação nativa para Ubuntu (x86_64)
-          - architecture: x86_64
-            apt_packages: build-essential
-            make_args: "LDFLAGS='-Wl,--allow-multiple-definition'"
+          #- architecture: x86_64
+         #   apt_packages: build-essential
+           # make_args: "LDFLAGS='-Wl,--allow-multiple-definition'"
 
           # 2. Compilação cruzada para ARM64 (AArch64)
-          #- architecture: arm64
-           # apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
-           # make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
+          - architecture: arm64
+            apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+            make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
 
     steps:
     - name: Checkout do código
