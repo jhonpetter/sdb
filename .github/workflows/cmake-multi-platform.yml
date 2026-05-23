@@ -16,11 +16,11 @@ jobs:
         include:
           - architecture: x86_64
             apt_packages: build-essential
-            make_args: "LOCAL_LFLAGS='-Wl,--allow-multiple-definition'"
+            make_args: ""
 
-          - architecture: arm64
-            apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
-            make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ LOCAL_LFLAGS='-Wl,--allow-multiple-definition'"
+          #- architecture: arm64
+            #apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+           # make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
 
     steps:
     - name: Checkout do código
@@ -31,15 +31,13 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y ${{ matrix.apt_packages }}
 
-    
-        
-
     - name: Compilar com Makefile
+      # Variável de ambiente configurada aqui para o Makefile ignorar os arquivos do Windows/Mac
       env:
         HOST_OS: linux
       run: make ${{ matrix.make_args }}
       working-directory: ${{ github.workspace }}
-
+      
     # --- NOVO PASSO AQUI ---
     - name: Salvar binário (Upload Artifact)
       uses: actions/upload-artifact@v4
