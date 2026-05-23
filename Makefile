@@ -27,7 +27,7 @@ ifeq ($(HOST_OS),linux)
 	LOCAL_USB_SRC :=  src/usb_linux.c
 	LOCAL_UTIL_SRC := src/utils_unix.c
 	LOCAL_OTHER_SRC := src/fdevent.c src/fdevent_unix.c src/auto_complete.c
-	LOCAL_LFLAGS := -lrt -lpthread -lcrypto
+	LOCAL_LFLAGS := -lrt -lpthread -lcrypto -Wl,--allow-multiple-definition
 	LOCAL_CFLAGS := -DOS_LINUX -DHAVE_FORKEXEC -DHAVE_SYMLINKS -DSDB_HOST=1 -DSDB_HOST_ON_TARGET=1 -D_FILE_OFFSET_BITS=64
 endif
 
@@ -80,7 +80,7 @@ SDB_SRC_CPPFILES := \
 	src/encryption.cpp \
 	src/SPCManager.cpp
 
-SDB_CFLAGS := -O2 -g -Wall -Wno-unused-parameter
+SDB_CFLAGS := -O2 -g -Wall -Wno-unused-parameter -fcommon
 SDB_CFLAGS += -D_XOPEN_SOURCE -D_GNU_SOURCE
 SDB_CFLAGS += -DSUPPORT_ENCRYPT
 SDB_CFLAGS += -Iinclude -Isrc
