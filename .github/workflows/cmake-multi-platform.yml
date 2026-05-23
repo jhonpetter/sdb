@@ -8,32 +8,44 @@ on:
 
 jobs:
   build:
-    # O runner será sempre o Ubuntu, mas compilaremos para diferentes arquiteturas
-    runs-on: ubuntu-latest
+    # Em vez de fixar no Ubuntu padrão, usamos a variável da matriz
+    runs-on: ${{ matrix.os }}
 
     strategy:
       fail-fast: false
       matrix:
         include:
-          # 1. Compilação nativa para Ubuntu (x86_64)
-          #- architecture: x86_64
-         #   apt_packages: build-essential
-           # make_args: "LDFLAGS='-Wl,--allow-multiple-definition'"
-
-          # 2. Compilação cruzada para ARM64 (AArch64)
+          # PC normal (x86_64)
+          - architecture: x86_64
+            os: ubuntu-latest
+          
+          # Máquina ARM nativa do GitHub
           - architecture: arm64
-            apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
-            make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
+            os: ubuntu-24.04-arm
 
     steps:
     - name: Checkout do código
       uses: actions/checkout@v4
 
-    - name: Instalar toolchains de compilação
+    - name: Instalar dependências
+      # Agora a instalação é IGUAL para os dois! 
+      # O libssl-dev fornece o libcrypto que faltava
       run: |
         sudo apt-get update
-        sudo apt-get install -y ${{ matrix.apt_packages }}
+        sudo apt-get install -y build-essential libssl-dev
 
+    - name: Compilar com Makefile
+      env:
+        HOST_OS: linux
+      # Não precisamos mais do CC=aarch64... porque o Ubuntu arm já usa o compilador certo!
+      run: make LOCAL_LFLAGS='-Wl,--allow-multiple-definition'
+      working-directory: ${{ github.workspace }}
+
+    - name: Salvar binário (Upload Artifact)
+      uses: actions/upload-artifact@v4
+      with:
+        name: executavel-sdb-${{ matrix.architecture }}
+        path: sdb
     - name: Compilar com Makefile
       # O comando make será executado na raiz do repositório
       # Para ARM64, ele passará os compiladores específicos (CC e CXX) como argumento
