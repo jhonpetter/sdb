@@ -8,51 +8,48 @@ on:
 
 jobs:
   build:
-    # Em vez de fixar no Ubuntu padrão, usamos a variável da matriz
-    runs-on: ${{ matrix.os }}
+    runs-on: ubuntu-latest
 
     strategy:
       fail-fast: false
       matrix:
         include:
-          # PC normal (x86_64)
           - architecture: x86_64
-            os: ubuntu-latest
-          
-          # Máquina ARM nativa do GitHub
+            apt_packages: build-essential
+            make_args: "LOCAL_LFLAGS='-Wl,--allow-multiple-definition'"
+
           - architecture: arm64
-            os: ubuntu-24.04-arm
+            apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+            make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++ LOCAL_LFLAGS='-Wl,--allow-multiple-definition'"
 
     steps:
     - name: Checkout do código
       uses: actions/checkout@v4
 
-    - name: Instalar dependências
-      # Agora a instalação é IGUAL para os dois! 
-      # O libssl-dev fornece o libcrypto que faltava
+    - name: Instalar toolchains de compilação
       run: |
         sudo apt-get update
-        sudo apt-get install -y build-essential libssl-dev
+        sudo apt-get install -y ${{ matrix.apt_packages }}
+
+    - name: Configurar Multiarch e Instalar (Apenas para Cross-compile)
+      run: |
+        sudo dpkg --add-architecture arm64
+        sudo sed -i 's/deb http/deb [arch=amd64,i386] http/g' /etc/apt/sources.list
+        sudo bash -c 'cat <<EOF > /etc/apt/sources.list.d/arm-cross-compile-sources.list
+        deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy main restricted universe multiverse
+        deb [arch=arm64] http://ports.ubuntu.com/ubuntu-ports jammy-updates main restricted universe multiverse
+        EOF'
+        sudo apt-get update
+        sudo apt-get install -y gcc-aarch64-linux-gnu g++-aarch64-linux-gnu libssl-dev:arm64
+        
 
     - name: Compilar com Makefile
       env:
         HOST_OS: linux
-      # Não precisamos mais do CC=aarch64... porque o Ubuntu arm já usa o compilador certo!
-      run: make LOCAL_LFLAGS='-Wl,--allow-multiple-definition'
+      run: make ${{ matrix.make_args }}
       working-directory: ${{ github.workspace }}
 
-    - name: Salvar binário (Upload Artifact)
-      uses: actions/upload-artifact@v4
-      with:
-        name: executavel-sdb-${{ matrix.architecture }}
-        path: sdb
-    - name: Compilar com Makefile
-      # O comando make será executado na raiz do repositório
-      # Para ARM64, ele passará os compiladores específicos (CC e CXX) como argumento
-      run: make HOST_OS=linux ${{ matrix.make_args }}
-      working-directory: ${{ github.workspace }}
-
-      # --- NOVO PASSO AQUI ---
+    # --- NOVO PASSO AQUI ---
     - name: Salvar binário (Upload Artifact)
       uses: actions/upload-artifact@v4
       with:
