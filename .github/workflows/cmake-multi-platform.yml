@@ -18,7 +18,7 @@ jobs:
           # 1. Compilação nativa para Ubuntu (x86_64)
           - architecture: x86_64
             apt_packages: build-essential
-            make_args: ""
+            make_args: "LDFLAGS='-Wl,--allow-multiple-definition'"
 
           # 2. Compilação cruzada para ARM64 (AArch64)
           #- architecture: arm64
