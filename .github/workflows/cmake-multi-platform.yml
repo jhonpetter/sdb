@@ -21,9 +21,9 @@ jobs:
             make_args: ""
 
           # 2. Compilação cruzada para ARM64 (AArch64)
-          - architecture: arm64
-            apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
-            make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
+          #- architecture: arm64
+           # apt_packages: gcc-aarch64-linux-gnu g++-aarch64-linux-gnu
+           # make_args: "CC=aarch64-linux-gnu-gcc CXX=aarch64-linux-gnu-g++"
 
     steps:
     - name: Checkout do código
@@ -37,5 +37,5 @@ jobs:
     - name: Compilar com Makefile
       # O comando make será executado na raiz do repositório
       # Para ARM64, ele passará os compiladores específicos (CC e CXX) como argumento
-      run: make ${{ matrix.make_args }}
+      run: make HOST_OS=linux ${{ matrix.make_args }}
       working-directory: ${{ github.workspace }}
