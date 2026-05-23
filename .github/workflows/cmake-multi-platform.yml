@@ -39,3 +39,13 @@ jobs:
       # Para ARM64, ele passará os compiladores específicos (CC e CXX) como argumento
       run: make HOST_OS=linux ${{ matrix.make_args }}
       working-directory: ${{ github.workspace }}
+
+      # --- NOVO PASSO AQUI ---
+    - name: Salvar binário (Upload Artifact)
+      uses: actions/upload-artifact@v4
+      with:
+        # Usa a variável da matriz para dar um nome diferente para o arquivo do PC e do ARM
+        name: executavel-sdb-${{ matrix.architecture }}
+        
+        # COLOQUE AQUI O NOME DO BINÁRIO QUE O MAKEFILE GERA (ex: sdb, out/sdb, etc)
+        path: ./bin/sdb
